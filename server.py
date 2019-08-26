@@ -18,7 +18,7 @@ def receive_messages(udp_socket):
 
 
 def main():
-    host = ("192.168.1.11", 1234)
+    host = ("127.0.0.1", 1234)
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     s.bind(host)
     data, client_address = s.recvfrom(1024)
